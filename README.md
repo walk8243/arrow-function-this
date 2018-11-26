@@ -22,3 +22,7 @@ npm run anonymous
 ```.sh
 npm run arrow
 ```
+
+## 参考資料
+- https://blog.bloomca.me/2018/08/24/javascript-fundamentals-this.html
+- http://exploringjs.com/es6/ch_core-features.html#sec_from-func-expr-to-arrow-func
