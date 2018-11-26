@@ -4,7 +4,10 @@
   "description": "無名関数とアロー関数とで関数内のthisの値の違い",
   "main": "index.js",
   "scripts": {
-    "arrow": "node arrow"
+    "anonymous": "node anonymous",
+    "arrow": "node arrow",
+    "main": "node main",
+    "start": "node main"
   },
   "repository": {
     "type": "git",

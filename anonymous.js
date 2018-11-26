@@ -5,20 +5,17 @@ function Test() {
 Test.prototype.test2 = function() {
   console.log('test2', this);
 
-  dummy(() => {
-    console.log('dummy', this);
+  const that = this;
+  dummy(function() {
+    console.log('dummy[this]', this);
+    console.log('dummy[that]', that);
   });
-};
-Test.prototype.test3 = () => {
-  console.log('test3', this);
 };
 
 const test = new Test();
 
 console.log('test', test);
 test.test2();
-test.test3();
-console.log('global[this]', this);
 
 function dummy(fn) {
   fn();
